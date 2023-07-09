@@ -1,0 +1,166 @@
+
+                    :not(body) #rootReactVNB {
+                        position: static;
+                    }
+
+                    #dialogContainer {
+                        flex-grow: 1 !important;
+                        position: fixed !important;
+                        background: rgba(255, 255, 255, 1) !important;
+                        border: 1px solid rgba(255, 255, 255, 1) !important;
+                        border-radius: 10px !important;
+                        display: flex;
+                        flex-direction: column !important;
+                        box-shadow: 0 0 5px rgba(35, 35, 35, 0.5) !important;
+                        transition: transform 0.5s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized) {
+                        min-width: 295px !important;
+                    }
+
+                    .VN--hide {
+                        display: none !important;
+                    }
+
+                    .VN--show {
+                        display: flex !important;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized) {
+                        background: rgba(255, 255, 255, 0.5);
+                        border: 1px solid rgba(255, 255, 255, 0) !important;
+                        transition-property:  border;
+                        transition-duration: 0.2s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized):hover,
+                    #dialogContainer:not(.dialogMinimized)[is-active="true"] {
+                        background: rgba(255, 255, 255, 1);
+                        border: 1px solid rgba(255, 255, 255, 1) !important;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized)>div>div:not([class^="AddonHeader__HeaderDivStyle"]) {
+                        opacity: 0.5;
+                        transition: opacity 0.2s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized):hover>div>div,
+                    #dialogContainer:not(.dialogMinimized)[is-active="true"]>div>div {
+                        opacity: 1;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized) div[class^="ButtonsWrapper"] {
+                        background-color: transparent;
+                        transition-property: background-color;
+                        transition-duration: 0.2s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized):hover div[class^="ButtonsWrapper"],
+                    #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class^="ButtonsWrapper"] {
+                        background-color: #dddddd;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized) div[class^="AddonFooter__DivStyled"] {
+                        opacity: 0.5;
+                        background-color: transparent;
+                        transition-property: background-color, opacity;
+                        transition-duration: 0.2s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized):hover div[class^="AddonFooter__DivStyled"],
+                    #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class^="AddonFooter__DivStyled"] {
+                        background-color: #dddddd;
+                        opacity: 1;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized) span[class^="ControlContainer"] {
+                        border-color: transparent;
+                        transition: border-color 0.2s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized):hover span[class^="ControlContainer"],
+                    #dialogContainer:not(.dialogMinimized)[is-active="true"] span[class^="ControlContainer"] {
+                        border-color: #dddddd;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized) div[class*="SeparatorStyledDiv"] {
+                        border-color: transparent;
+                        transition: border-color 0.2s;
+                    }
+
+                    #dialogContainer:not(.dialogMinimized):hover div[class*="SeparatorStyledDiv"],
+                    #dialogContainer:not(.dialogMinimized)[is-active="true"] div[class*="SeparatorStyledDiv"] {
+                        border-color: #bbbbbb;
+                    }
+
+                    #dialogContainer .ProseMirror strong {
+                        font-family: 'Roboto-bold', sans-serif;
+                    }
+
+                    #dialogContainer.positionRightTop {
+                        top: 10px;
+                        right: 10px;
+                        max-height: 600px;
+                        min-height: fit-content;
+                    }
+
+                    #dialogContainer.positionRightTop.gmeet {
+                        top: 50px !important;
+                    }
+
+                    #dialogContainer.positionLeftTop {
+                        top: 10px;
+                        left: 10px;
+                        max-height: 600px;
+                        min-height: fit-content;
+                    }
+
+                    #dialogContainer {
+                        z-index: 1000000000000 !important;
+                    }
+
+                    #dialogContainer.dialogMinimized {
+                        max-width: 200px;
+                        width: auto !important;
+                        transform: translate(0px, 0px);
+                        position: absolute !important;
+                        top: 6px !important;
+                        right: 6px !important;
+                        left: auto !important;
+                        bottom: auto !important;
+                        box-shadow: none !important;
+                        background: none !important;
+                        border: none !important;
+                        border-radius: 0 !important;
+                        z-index: 2019 !important;
+                    }
+
+                    #dialogContainer.positionRightBottom {
+                        right: 10px;
+                        bottom: 10px;
+                        max-height: 400px;
+                        min-height: 63px;
+                    }
+
+                    #dialogContainer.positionLeftBottom {
+                        left: 10px;
+                        bottom: 10px;
+                        max-height: 400px;
+                        min-height: 63px;
+                    }
+
+                    .overflow {
+                        height: 270px;
+                        overflow-y: auto !important;
+                    }
+
+                    .VN--hide {
+                        display: none !important;
+                        visibility: hidden;
+                    }
+
+                    .VN--show {
+                        display: flex;
+                    }
+             
